@@ -1,0 +1,87 @@
+.course_info{
+    margin-bottom: 180px;
+    &_row{
+      @include flex(center, space-between);
+      gap: 20px;
+
+      &_left{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+         
+
+       
+      }
+      &_right{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+      
+      
+    }
+   
+}
+.block_info{
+    @include flex(center, space-between);
+    
+    position: relative;
+    box-shadow: 6px 6px 22px 0px rgba(34, 60, 80, 0.2);
+    transition: all 0.4s ease-in-out;
+
+    
+    &_image{
+        height: 214px;
+    }
+    &_content{
+        border-radius: 4px;
+        padding: 32px 32px 62px 32px;
+        height: 214px;
+        width: auto;
+       
+        &_type{
+            background-color: $succes;
+            border-radius: 5px;
+            color: white;
+            width: 79px;
+            height: 23px;
+            text-align: center;
+            margin-bottom: 20px;
+
+            
+        }
+        &_title{
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 150%;
+            color: #1E212C;
+            width: 90%;
+            margin-bottom: 20px;
+
+        }
+    }
+    &:hover{
+        transform: translateY(-10px);
+        box-shadow: 6px 9px 33px 4px rgba(34, 60, 80, 0.2);
+    }
+    
+}
+.price_info{
+    @include flex(center,start);
+    gap: 5px;
+
+
+    &_price{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+        color: #FF4242;
+    }
+    &_name{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        border-left-width:2px solid #787A80;
+        color: #787A80;
+    }
+}

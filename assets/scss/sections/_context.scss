@@ -1,0 +1,38 @@
+.context{
+    position: relative;
+    
+    &_row{
+      @include flex(unset,space-between);
+      margin:200px 0 200px 0;
+    }
+    &_small_title{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #1E212C;
+        margin-bottom: 30px
+
+    }
+    &_big_title{
+        font-weight: 900;
+        font-size: 46px;
+        line-height: 130%;
+        color: #1E212C;
+        margin-bottom: 50px
+    }
+    &_subtitles{
+        margin-bottom: 50px
+
+    }
+    &_subtitle{
+        @include flex(center,unset);
+        gap: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #42444d;     
+        width: 90%;
+    }
+}

@@ -1,0 +1,8 @@
+.course_types{
+    @include flex (center,space-between);
+
+    &_row{
+      @include flex(center,space-between );
+      gap: 500px;
+    }
+}
